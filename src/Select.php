@@ -1,6 +1,6 @@
 <?php
 
-namespace LongtailVentures\Html;
+namespace LongTailVentures\Html;
 
 class Select
 {
