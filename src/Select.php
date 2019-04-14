@@ -54,7 +54,9 @@ class Select
         $formattedOptions = array();
 
         $keyField = $format['key'];
-        $valueFields = is_array($format['values']) ? $format['values'] : array($format['values']);
+        $valueFields = is_array($format['values'])
+            ? $format['values']
+            : array($format['values']);
 
         foreach ($options as $option)
         {
