@@ -1,7 +1,7 @@
 <?php
 
 /**
- * THIS IS DEPRECATED!!!!!
+ * THIS IS DEPRECATED!!
  */
 
 namespace LongTailVentures\Html;
