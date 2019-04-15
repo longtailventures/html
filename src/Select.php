@@ -89,6 +89,7 @@ class Select
         // re: https://stackoverflow.com/questions/262891/is-there-a-way-to-find-how-how-deep-a-php-array-is
         $maxIndentation = 1;
 
+
         // PHP_EOL in case we're running on Windows
         $lines = explode(PHP_EOL, print_r($options, true));
 
