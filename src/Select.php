@@ -10,7 +10,7 @@ class Select
 {
     public static function render($name, $options, $selected = '', $attributes = array())
     {
-        $selectParams = array('name=' . $name);
+        $selectParams = array("name=" . $name);
 
         foreach ($attributes as $label => $value)
             $selectParams[] = $label . '="' . $value . '"';
