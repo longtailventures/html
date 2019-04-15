@@ -86,8 +86,8 @@ class Select
         if (!is_array($options))
             return false;
 
-        // re: http://stackoverflow.com/questions/262891/is-there-a-way-to-find-how-how-deep-a-php-array-is
-        $max_indentation = 1;
+        // re: https://stackoverflow.com/questions/262891/is-there-a-way-to-find-how-how-deep-a-php-array-is
+        $maxIndentation = 1;
 
         // PHP_EOL in case we're running on Windows
         $lines = explode(PHP_EOL, print_r($options, true));
@@ -95,10 +95,10 @@ class Select
         foreach ($lines as $line)
         {
             $indentation = (strlen($line) - strlen(ltrim($line))) / 4;
-            $max_indentation = max($max_indentation, $indentation);
+            $maxIndentation = max($maxIndentation, $indentation);
         }
 
-        $arrayDepth = ceil(($max_indentation - 1) / 2) + 1;
+        $arrayDepth = ceil(($maxIndentation - 1) / 2) + 1;
 
         return $arrayDepth > 1;
     }
