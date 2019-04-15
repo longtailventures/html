@@ -66,7 +66,9 @@ class Select
                 foreach ($valueFields as $valueKey)
                 {
                     if (isset($option[$valueKey]))
+                    {
                         $values[$valueKey] = $option[$valueKey];
+                    }
                 }
 
                 $formattedOptions[$option[$keyField]] = count($values) == 1
