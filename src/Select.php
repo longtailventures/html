@@ -43,7 +43,7 @@ class Select
             }
         }
 
-        $html .= '</select>';
+        $html .= "</select>";
 
         return $html;
     }
