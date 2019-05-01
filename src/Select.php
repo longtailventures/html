@@ -90,6 +90,7 @@ class Select
         $maxIndentation = 1;
 
 
+
         // PHP_EOL in case we're running on Windows
         $lines = explode(PHP_EOL, print_r($options, true));
 
