@@ -84,9 +84,7 @@ class Select
     private static function _isOptGroup($options)
     {
         if (!is_array($options))
-        {
             return false;
-        }
 
         // re: https://stackoverflow.com/questions/262891/is-there-a-way-to-find-how-how-deep-a-php-array-is
         $maxIndentation = 1;
