@@ -25,9 +25,13 @@ class Select
                 foreach ($optGroup as $label => $value)
                 {
                     if (strcasecmp($value, $selected) == 0)
+                    {
                         $html .= '<option value="' . $value . '" selected="selected">' . $label . '</option>';
+                    }
                     else
+                    {
                         $html .= '<option value="' . $value . '">' . $label . '</option>';
+                    }
                 }
                 $html .= '</optgroup>';
             }
